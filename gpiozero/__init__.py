@@ -115,6 +115,7 @@ from .boards import (
     PumpkinPi,
     JamHat,
     Pibrella,
+    Robohat,
 )
 from .internal_devices import (
     InternalDevice,

@@ -2294,6 +2294,16 @@ class RyanteckRobot(Robot):
             right=Motor('BOARD15', 'BOARD16', pwm=pwm, pin_factory=pin_factory),
             pin_factory=pin_factory)
 
+class Robohat(Robot):
+    """
+    Extends :class:`Robot` for the `4tronix RoboHAT(2)` board for basic two-motor support
+    """
+    def __init__(self, *, pwm=True, pin_factory=None):
+        super().__init__(
+            left=Motor('BOARD32', 'BOARD33', pwm=pwm, pin_factory=pin_factory),
+            right=Motor('BOARD35', 'BOARD36', pwm=pwm, pin_factory=pin_factory),
+            pin_factory=pin_factory)
+
 
 class CamJamKitRobot(Robot):
     """
